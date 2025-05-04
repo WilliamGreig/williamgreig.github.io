@@ -18,21 +18,33 @@
     </script>
   </head>
   <body class="bg-midnight text-white font-sans">
-    <!-- Navbar -->
-    <nav class="bg-midnight border-b border-gray-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16 items-center">
-          <div class="text-xl font-bold text-white">
-            Vulcan Technologies LLC
+  <!-- Navbar -->
+  <nav class="bg-midnight border-b border-gray-800 relative z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="text-xl font-bold text-white">
+          Vulcan Technologies LLC
+        </div>
+        <div class="space-x-6 hidden md:flex items-center relative group">
+          <a href="#about" class="text-white hover:text-gray-300">About</a>
+
+          <!-- Projects with Dropdown -->
+          <div class="relative group">
+            <button class="text-white hover:text-gray-300 focus:outline-none">
+              Projects
+            </button>
+            <div class="absolute left-0 mt-2 w-48 bg-white text-midnight rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto">
+              <a href="#ai-platform" class="block px-4 py-2 hover:bg-gray-100">AI Platform</a>
+              <a href="#infra" class="block px-4 py-2 hover:bg-gray-100">Infrastructure</a>
+              <a href="#research" class="block px-4 py-2 hover:bg-gray-100">R&D Projects</a>
+            </div>
           </div>
-          <div class="space-x-6 hidden md:flex">
-            <a href="#about" class="text-white hover:text-gray-300">About</a>
-            <a href="#projects" class="text-white hover:text-gray-300">Projects</a>
-            <a href="#contact" class="text-white hover:text-gray-300">Contact</a>
-          </div>
+
+          <a href="#contact" class="text-white hover:text-gray-300">Contact</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <!-- Hero Section -->
     <section class="py-24 bg-midnight">
