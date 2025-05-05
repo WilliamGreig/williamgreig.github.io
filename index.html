@@ -16,7 +16,7 @@
         },
       };
     </script>
-    
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
   </head>
   <body class="bg-midnight text-white font-sans">
 
@@ -29,64 +29,47 @@
         </div>
 
         <div class="space-x-6 hidden md:flex items-center">
+          <!-- Products dropdown -->
+        <div class="relative">
+          <button data-dropdown-trigger="hover" id="productsDropdownButton" data-dropdown-toggle="productsDropdown" class="text-white bg-midnight hover:text-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">
+            Products
+            <!-- <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg> -->
+          </button>
 
-          <!-- Products dropdown wrapper -->
-          <div class="relative group">
-            <!-- Trigger button -->
-            <button class="text-white hover:text-gray-300 focus:outline-none">
-              Products
-            </button>
-
-            <!-- Scalable dropdown container -->
-            <div class="absolute left-1/2 top-[4rem] transform -translate-x-1/2 bg-white text-midnight rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 p-4 flex space-x-8 min-w-[300px]">
-              
-              <!-- Cloud Subcategory -->
-              <div>
-                <h3 class="font-semibold text-lg mb-2">Cloud</h3>
-                <a href="#ai-platform" class="block hover:bg-gray-100 px-3 py-1 rounded-lg transition">AI Platform</a>
-                <a href="#infra" class="block hover:bg-gray-100 px-3 py-1 rounded-lg transition">Infrastructure</a>
-              </div>
-
-              <!-- Commercial Subcategory -->
-              <div>
-                <h3 class="font-semibold text-lg mb-2">Commercial</h3>
-                <a href="#enterprise-tools" class="block hover:bg-gray-100 px-3 py-1 rounded-lg transition">Enterprise Tools</a>
-                <a href="#marketplace" class="block hover:bg-gray-100 px-3 py-1 rounded-lg transition">Marketplace</a>
-              </div>
-
-            </div>
+          <!-- Dropdown menu -->
+          <div id="productsDropdown" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48 dark:bg-gray-700 absolute mt-2">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="productsDropdownButton">
+              <li><a href="#ai-platform" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">AI Platform</a></li>
+              <li><a href="#infra" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Infrastructure</a></li>
+              <li><a href="#enterprise-tools" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enterprise Tools</a></li>
+            </ul>
           </div>
+        </div>
 
-
-          <!-- Products dropdown wrapper -->
-          <div class="relative group">
-            <!-- Trigger button -->
-            <button class="text-white hover:text-gray-300 focus:outline-none">
+          <!-- R&D dropdown -->
+          <div class="relative">
+            <button data-dropdown-trigger="hover" id="rndDropdownButton" data-dropdown-toggle="rndDropdown" class="text-white bg-midnight hover:text-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">
               R&D
+              <!-- <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+              </svg> -->
             </button>
 
-            <!-- Scalable dropdown container -->
-            <div class="absolute left-1/2 top-[4rem] transform -translate-x-1/2 bg-white text-midnight rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 p-4 flex space-x-8 min-w-[300px]">
-              
-              <!-- Cloud Subcategory -->
-              <div>
-                <h3 class="font-semibold text-lg mb-2">Cloud</h3>
-                <a href="#ai-platform" class="block hover:bg-gray-100 px-3 py-1 rounded-lg transition">AI Platform</a>
-                <a href="#infra" class="block hover:bg-gray-100 px-3 py-1 rounded-lg transition">Infrastructure</a>
-              </div>
-
-              <!-- Commercial Subcategory -->
-              <div>
-                <h3 class="font-semibold text-lg mb-2">Commercial</h3>
-                <a href="#enterprise-tools" class="block hover:bg-gray-100 px-3 py-1 rounded-lg transition">Enterprise Tools</a>
-                <a href="#marketplace" class="block hover:bg-gray-100 px-3 py-1 rounded-lg transition">Marketplace</a>
-              </div>
-
+            <!-- Dropdown menu -->
+            <div id="rndDropdown" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48 dark:bg-gray-700 absolute mt-2">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="rndDropdownButton">
+                <li><a href="#applied-ai" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Applied AI</a></li>
+                <li><a href="#research-platforms" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Research Platforms</a></li>
+                <li><a href="#mlops" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">MLOps</a></li>
+              </ul>
             </div>
           </div>
           
-          <a href="#about" class="text-white hover:text-gray-300">About</a>
-          <a href="#contact" class="text-white hover:text-gray-300">Contact</a>
+          <a href="#about" class="text-white bg-midnight hover:text-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center">About</a>
+          <a href="#contact" class="text-white bg-midnight hover:text-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center">Contact</a>
+          
         </div>
       </div>
     </div>
