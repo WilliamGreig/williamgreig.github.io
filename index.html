@@ -16,64 +16,101 @@
         },
       };
     </script>
-    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
   </head>
   <body class="bg-midnight text-white font-sans">
 
-  <!-- Navbar -->
-  <nav class="bg-midnight border-b border-gray-800 relative z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16 items-center">
-        <div class="text-xl font-bold text-white">
-          Vulcan Technologies LLC
-        </div>
+<!-- Navbar -->
+<header class="bg-midnight border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+    <div class="text-white text-xl font-bold">Vulcan Technologies</div>
 
-        <div class="space-x-6 hidden md:flex items-center">
-          <!-- Products dropdown -->
-        <div class="relative">
-          <button data-dropdown-trigger="hover" id="productsDropdownButton" data-dropdown-toggle="productsDropdown" class="text-white bg-midnight hover:text-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">
-            Products
-            <!-- <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg> -->
-          </button>
-
-          <!-- Dropdown menu -->
-          <div id="productsDropdown" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48 dark:bg-gray-700 absolute mt-2">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="productsDropdownButton">
-              <li><a href="#ai-platform" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">AI Platform</a></li>
-              <li><a href="#infra" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Infrastructure</a></li>
-              <li><a href="#enterprise-tools" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enterprise Tools</a></li>
-            </ul>
-          </div>
-        </div>
-
-          <!-- R&D dropdown -->
-          <div class="relative">
-            <button data-dropdown-trigger="hover" id="rndDropdownButton" data-dropdown-toggle="rndDropdown" class="text-white bg-midnight hover:text-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">
-              R&D
-              <!-- <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg> -->
-            </button>
-
-            <!-- Dropdown menu -->
-            <div id="rndDropdown" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48 dark:bg-gray-700 absolute mt-2">
-              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="rndDropdownButton">
-                <li><a href="#applied-ai" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Applied AI</a></li>
-                <li><a href="#research-platforms" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Research Platforms</a></li>
-                <li><a href="#mlops" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">MLOps</a></li>
-              </ul>
+    <nav class="hidden md:flex space-x-10 items-center text-sm text-gray-300">
+      <!-- Products Flyout -->
+      <div class="relative group">
+        <button type="button" class="inline-flex items-center gap-x-1 font-semibold text-gray-300 hover:text-white" aria-expanded="false">
+          <span>Products</span>
+          <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+        </button>
+    
+        <div class="absolute left-1/2 z-10 mt-5 hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4">
+          <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
+            <div class="p-4">
+              <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <!-- Icon -->
+                  <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25A2.25 2.25 0 0010.5 8.25V6A2.25 2.25 0 008.25 3.75H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5Z" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">Cloud Platform</a>
+                  <p class="mt-1 text-gray-600">Robust infrastructure services for scale</p>
+                </div>
+              </div>
+              <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.023 9.348h4.992M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183A8.25 8.25 0 0019.5 10.5" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">Developer Tools</a>
+                  <p class="mt-1 text-gray-600">Ship fast with powerful APIs and SDKs</p>
+                </div>
+              </div>
             </div>
           </div>
-          
-          <a href="#about" class="text-white bg-midnight hover:text-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center">About</a>
-          <a href="#contact" class="text-white bg-midnight hover:text-gray-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center">Contact</a>
-          
         </div>
       </div>
-    </div>
-  </nav>
+    
+      <!-- R&D Flyout -->
+      <div class="relative group">
+        <button type="button" class="inline-flex items-center gap-x-1 font-semibold text-gray-300 hover:text-white" aria-expanded="false">
+          <span>R&D</span>
+          <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+        </button>
+    
+        <div class="absolute left-1/2 z-10 mt-5 hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4">
+          <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
+            <div class="p-4">
+              <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6zM13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">AI Research</a>
+                  <p class="mt-1 text-gray-600">Exploring intelligent systems of the future</p>
+                </div>
+              </div>
+              <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25A2.25 2.25 0 0010.5 8.25V6A2.25 2.25 0 008.25 3.75H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5Z" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">Distributed Systems</a>
+                  <p class="mt-1 text-gray-600">Scalable architectures for global reliability</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Static Links -->
+      <a href="#projects" class="font-semibold hover:text-white">Projects</a>
+      <a href="#contact" class="font-semibold hover:text-white">Contact</a>
+    </nav>
+    
+  </div>
+</header>
 
     <!-- Hero Section -->
     <section class="py-24 bg-midnight">
