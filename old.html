@@ -24,12 +24,12 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         <div class="text-white text-xl font-bold">Vulcan Technologies</div>
 
-        <nav class="hidden md:flex space-x-10 items-center text-sm text-gray-300 relative">
+        <nav class="hidden md:flex space-x-10 items-center text-sm text-gray-300">
           <!-- Products Flyout -->
           <div class="relative group">
             <button type="button" class="inline-flex items-center gap-x-1 font-semibold text-gray-300 hover:text-white" aria-expanded="false">
-              <span>Products</span>
-              <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <span>Projects</span>
+              <svg class="w-5 h-5 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
               </svg>
             </button>
@@ -69,7 +69,7 @@
           <div class="relative group">
             <button type="button" class="inline-flex items-center gap-x-1 font-semibold text-gray-300 hover:text-white" aria-expanded="false">
               <span>R&D</span>
-              <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg class="w-5 h-5 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
               </svg>
             </button>
@@ -109,48 +109,38 @@
           <a href="#contact" class="font-semibold hover:text-white">Contact</a>
         </nav>
         
-        <!-- Chevron -->
-        <div id="chevron" class="absolute bottom-0 left-0 transform translate-x-1/2 translate-y-2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-t-transparent border-l-transparent border-r-transparent border-b-8 border-b-white"></div>
       </div>
     </header>
-
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const dropdowns = document.querySelectorAll('.group');
-        const chevron = document.getElementById('chevron');
-        let timeoutId;
-        let currentDropdown = null;
-        let currentButton = null;
-  
-        dropdowns.forEach(dropdown => {
-          const button = dropdown.querySelector('button');
-          const menu = dropdown.querySelector('.group-hover\\:flex');
-  
-          dropdown.addEventListener('mouseenter', () => {
-            // Close previously open dropdown if any
-            if (currentDropdown && currentDropdown !== menu) {
-              currentDropdown.classList.add('hidden');
-            }
-            clearTimeout(timeoutId);  // Clear the timeout to prevent closing
-            menu.classList.remove('hidden');  // Show the current dropdown
-            currentDropdown = menu;  // Update current open dropdown
+        document.addEventListener("DOMContentLoaded", function() {
+          const dropdowns = document.querySelectorAll('.group');
+          let timeoutId;
+          let currentDropdown = null; // Track the currently open dropdown
+      
+          dropdowns.forEach(dropdown => {
+            const menu = dropdown.querySelector('.group-hover\\:flex');
             
-            const buttonRect = button.getBoundingClientRect();
-            chevron.style.left = `${buttonRect.left + buttonRect.width / 2 - chevron.offsetWidth / 2}px`;
-          });
-  
-          dropdown.addEventListener('mouseleave', () => {
-            timeoutId = setTimeout(() => {
-              menu.classList.add('hidden');  // Hide the dropdown after delay
-              if (currentDropdown === menu) {
-                currentDropdown = null;  // Reset currentDropdown when it closes
+            dropdown.addEventListener('mouseenter', () => {
+              // Close the previously open dropdown (if any)
+              if (currentDropdown && currentDropdown !== menu) {
+                currentDropdown.classList.add('hidden');
               }
-            }, 300);  // 300ms delay
+              clearTimeout(timeoutId);  // Clear the timeout to prevent closing
+              menu.classList.remove('hidden');  // Show the current dropdown
+              currentDropdown = menu;  // Update the current open dropdown
+            });
+      
+            dropdown.addEventListener('mouseleave', () => {
+              timeoutId = setTimeout(() => {
+                menu.classList.add('hidden');  // Hide the dropdown after delay
+                if (currentDropdown === menu) {
+                  currentDropdown = null;  // Reset currentDropdown when it closes
+                }
+              }, 300);  // 300ms delay
+            });
           });
         });
-      });
-    </script>
-
+      </script>
     <!-- Hero Section -->
     <section class="py-24 bg-midnight">
       <div class="max-w-4xl mx-auto px-4 text-center">
