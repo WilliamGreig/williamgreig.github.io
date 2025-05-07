@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vulcan Technologies LLC</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        midnight: '#0f172a', // Deep blue tone
-                    },
-                },
-            },
-        };
-    </script>
-</head>
-
 <!-- Navbar -->
 <header class="bg-darkMidnight border-b border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
@@ -77,3 +56,35 @@
                     </div>
                 </div>
             </div>
+
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const dropdowns = document.querySelectorAll('.group');
+                    let timeoutId;
+                    let currentDropdown = null; // Track the currently open dropdown
+
+                    dropdowns.forEach(dropdown => {
+                        const menu = dropdown.querySelector('.group-hover\\:flex');
+
+                        dropdown.addEventListener('mouseenter', () => {
+                            // Close the previously open dropdown (if any)
+                            if (currentDropdown && currentDropdown !== menu) {
+                                currentDropdown.classList.add('hidden');
+                            }
+                            clearTimeout(timeoutId);  // Clear the timeout to prevent closing
+                            menu.classList.remove('hidden');  // Show the current dropdown
+                            currentDropdown = menu;  // Update the current open dropdown
+                        });
+
+                        dropdown.addEventListener('mouseleave', () => {
+                            timeoutId = setTimeout(() => {
+                                menu.classList.add('hidden');  // Hide the dropdown after delay
+                                if (currentDropdown === menu) {
+                                    currentDropdown = null;  // Reset currentDropdown when it closes
+                                }
+                            }, 300);  // 300ms delay
+                        });
+                    });
+                });
+            </script>
