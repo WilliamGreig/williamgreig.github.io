@@ -1,62 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vulcan Technologies LLC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0f172a', // Deep blue tone
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
 <!-- Navbar -->
-<header class="bg-darkMidnight border-b border-gray-800">
+<header class="bg-midnight border-b border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-        <div class="text-white text-xl font-bold">Vulcan Technologies</div>
+      <div class="text-white text-xl font-bold">Vulcan Technologies</div>
 
-        <nav class="hidden md:flex space-x-10 items-center text-sm text-gray-300">
-            <!-- Products Flyout -->
-            <div class="relative group">
-                <button type="button"
-                    class="inline-flex items-center gap-x-1 font-semibold text-gray-300 hover:text-white"
-                    aria-expanded="false">
-                    <span>Projects</span>
-                    <svg class="w-5 h-5 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20"
-                        fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd"
-                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                            clip-rule="evenodd" />
+      <nav class="hidden md:flex space-x-10 items-center text-sm text-gray-300">
+        <!-- Products Flyout -->
+        <div class="relative group">
+          <button type="button" class="inline-flex items-center gap-x-1 font-semibold text-gray-300 hover:text-white" aria-expanded="false">
+            <span>Projects</span>
+            <svg class="w-5 h-5 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+      
+          <div class="absolute left-1/2 z-10 mt-7 hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4">
+            <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
+              <div class="p-4">
+                <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                  <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <!-- Icon -->
+                    <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25A2.25 2.25 0 0010.5 8.25V6A2.25 2.25 0 008.25 3.75H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5Z" />
                     </svg>
-                </button>
-
-                <div
-                    class="absolute left-1/2 z-10 mt-7 hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4">
-                    <div
-                        class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
-                        <div class="p-4">
-                            <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                                <div
-                                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                    <!-- Icon -->
-                                    <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                            d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25A2.25 2.25 0 0010.5 8.25V6A2.25 2.25 0 008.25 3.75H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5Z" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <a href="#" class="font-semibold text-gray-900">Cloud Platform</a>
-                                    <p class="mt-1 text-gray-600">Robust infrastructure services for scale</p>
-                                </div>
-                            </div>
-                            <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                                <div
-                                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                    <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                            d="M16.023 9.348h4.992M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183A8.25 8.25 0 0019.5 10.5" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <a href="#" class="font-semibold text-gray-900">Developer Tools</a>
-                                    <p class="mt-1 text-gray-600">Ship fast with powerful APIs and SDKs</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
+                  <div>
+                    <a href="#" class="font-semibold text-gray-900">Cloud Platform</a>
+                    <p class="mt-1 text-gray-600">Robust infrastructure services for scale</p>
+                  </div>
                 </div>
+                <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                  <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.023 9.348h4.992M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183A8.25 8.25 0 0019.5 10.5" />
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="#" class="font-semibold text-gray-900">Developer Tools</a>
+                    <p class="mt-1 text-gray-600">Ship fast with powerful APIs and SDKs</p>
+                  </div>
+                </div>
+              </div>
             </div>
-
+          </div>
+        </div>
+      
+        <!-- R&D Flyout -->
+        <div class="relative group">
+          <button type="button" class="inline-flex items-center gap-x-1 font-semibold text-gray-300 hover:text-white" aria-expanded="false">
+            <span>R&D</span>
+            <svg class="w-5 h-5 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+      
+          <div class="absolute left-1/2 z-10 mt-7 hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4">
+            <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
+              <div class="p-4">
+                <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                  <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6zM13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="#" class="font-semibold text-gray-900">AI Research</a>
+                    <p class="mt-1 text-gray-600">Exploring intelligent systems of the future</p>
+                  </div>
+                </div>
+                <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                  <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25A2.25 2.25 0 0010.5 8.25V6A2.25 2.25 0 008.25 3.75H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="#" class="font-semibold text-gray-900">Distributed Systems</a>
+                    <p class="mt-1 text-gray-600">Scalable architectures for global reliability</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Static Links -->
+        <a href="#projects" class="font-semibold hover:text-white">Projects</a>
+        <a href="#contact" class="font-semibold hover:text-white">Contact</a>
+      </nav>
+      
+    </div>
+  </header>
 
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
