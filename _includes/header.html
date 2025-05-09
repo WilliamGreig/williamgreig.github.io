@@ -5,21 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      @font-face {
-        font-family: 'EurostileExtendedBlack';
-        src: url('{{ "/assets/fonts/EurostileExtendedBlack.ttf" | relative_url }}') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-    </style>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                  fontFamily: {
-                    eurostile: ['EurostileExtendedBlack', 'sans-serif'],
-                  },
                     colors: {
                         midnight: '#0f172a', // Deep blue tone
                         darkMidnight: '#020a1b'
@@ -31,10 +20,10 @@
 </head>
 <!-- Navbar -->
 <header class="bg-darkMidnight border-b border-gray-800">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-start items-center h-16">
-    <!-- <div class="text-white text-xl font-bold">Vulcan Technologies</div> -->
-
-    <h1 class="font-eurostile text-white text-4xl">Vulcan Technologies</h1>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-start items-center h-20">
+    <a href="/" class="flex items-center">
+      <img src="../assets/images/vulcanlogo3.png" alt="Vulcan Technologies" class="h-20 w-auto">
+    </a>
   
     <nav class="hidden md:flex space-x-10 items-center text-sm text-gray-300 ml-auto mr-24">
       <!-- Products Flyout -->

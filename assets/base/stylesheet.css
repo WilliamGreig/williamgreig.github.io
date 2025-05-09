@@ -1,6 +1,0 @@
-@font-face {
-    font-family: 'EurostileExtendedBlack';
-    src: url('{{ "/assets/fonts/EurostileExtendedBlack.ttf" | relative_url }}') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
