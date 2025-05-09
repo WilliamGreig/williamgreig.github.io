@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        midnight: '#0f172a', // Deep blue tone
-                        darkMidnight: '#020a1b'
-                    },
-                },
-            },
-        };
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#0f172a', // Deep blue tone
+            darkMidnight: '#020a1b'
+          },
+        },
+      },
+    };
+  </script>
 </head>
 <!-- Navbar -->
 <header class="bg-darkMidnight border-b border-gray-800">
@@ -24,73 +24,111 @@
     <a href="/" class="flex items-center">
       <img src="../assets/images/vulcanlogo3.png" alt="Vulcan Technologies" class="h-20 w-auto">
     </a>
-  
+
     <nav class="hidden md:flex space-x-10 items-center text-sm text-gray-300 ml-auto mr-24">
       <!-- Products Flyout -->
       <div class="relative group">
-        <button type="button" class="inline-flex items-center gap-x-1 font-semibold text-gray-300 hover:text-white" aria-expanded="false">
+        <button type="button" class="inline-flex items-center gap-x-1 font-semibold text-gray-300 hover:text-white"
+          aria-expanded="false">
           <span>Projects</span>
-          <svg class="w-5 h-5 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          <svg class="w-5 h-5 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20" fill="currentColor"
+            aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd" />
           </svg>
         </button>
-    
+
         <div class="absolute left-1/2 z-10 mt-7 hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4">
-          <div class="w-screen max-w-2xl flex-auto overflow-hidden rounded-3xl bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
-            <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <a href="#" class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                  <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/>
-                    <line x1="12" y1="2" x2="12" y2="6" stroke="currentColor" stroke-width="1.5"/>
-                    <line x1="12" y1="18" x2="12" y2="22" stroke="currentColor" stroke-width="1.5"/>
-                    <line x1="2" y1="12" x2="6" y2="12" stroke="currentColor" stroke-width="1.5"/>
-                    <line x1="18" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.5"/>
-                    <circle cx="4" cy="4" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-                    <circle cx="20" cy="4" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-                    <circle cx="4" cy="20" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-                    <circle cx="20" cy="20" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-                  </svg>
-                </div>
-                <div>
-                  <div class="font-semibold text-gray-900">Drone Tracking</div>
-                  <p class="mt-1 text-gray-600">UAV classification and flight analysis</p>
-                </div>
-              </a>
-              
-              <a href="#" class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                  <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.023 9.348h4.992M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183A8.25 8.25 0 0019.5 10.5" />
-                  </svg>
-                </div>
-                <div>
-                  <div class="font-semibold text-gray-900">Autarkes</div>
-                  <p class="mt-1 text-gray-600">Workflow automation</p>
-                </div>
-              </a>
+          <div
+            class="w-screen max-w-2xl flex-auto overflow-hidden rounded-3xl bg-white text-sm shadow-lg ring-1 ring-gray-900/5 relative">
+            <!-- Titles -->
+            <div class="absolute top-4 left-0 w-1/2 px-6 text-base font-semibold text-gray-700">
+              Drone Systems
+            </div>
+            <div class="absolute top-4 right-0 w-1/2 px-6 text-base font-semibold text-gray-700">
+              AI Automation
+            </div>
+
+            <!-- Divider -->
+            <div class="hidden md:block absolute top-6 bottom-6 left-1/2 w-px bg-gray-200"></div>
+
+
+            <!-- Content Grid -->
+            <div class="p-4 pt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- Left Column -->
+              <div class="space-y-4">
+                <a href="#" class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5" />
+                      <line x1="12" y1="2" x2="12" y2="6" stroke="currentColor" stroke-width="1.5" />
+                      <line x1="12" y1="18" x2="12" y2="22" stroke="currentColor" stroke-width="1.5" />
+                      <line x1="2" y1="12" x2="6" y2="12" stroke="currentColor" stroke-width="1.5" />
+                      <line x1="18" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.5" />
+                      <circle cx="4" cy="4" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                      <circle cx="20" cy="4" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                      <circle cx="4" cy="20" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                      <circle cx="20" cy="20" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">Drone Tracking</div>
+                    <p class="mt-1 text-gray-600">UAV classification and flight analysis</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Right Column -->
+              <div class="space-y-4">
+                <a href="#" class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M16.023 9.348h4.992M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183A8.25 8.25 0 0019.5 10.5" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">Autarkes</div>
+                    <p class="mt-1 text-gray-600">Workflow automation</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    
+
+
       <!-- R&D Flyout -->
       <div class="relative group">
-        <button type="button" class="inline-flex items-center gap-x-1 font-semibold text-gray-300 hover:text-white" aria-expanded="false">
+        <button type="button" class="inline-flex items-center gap-x-1 font-semibold text-gray-300 hover:text-white"
+          aria-expanded="false">
           <span>R&D</span>
-          <svg class="w-5 h-5 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          <svg class="w-5 h-5 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20" fill="currentColor"
+            aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd" />
           </svg>
         </button>
-    
+
         <div class="absolute left-1/2 z-10 mt-7 hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4">
-          <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
+          <div
+            class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
             <div class="p-4">
 
               <a href="#" class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                  <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25A2.25 2.25 0 0010.5 8.25V6A2.25 2.25 0 008.25 3.75H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5Z" />
+                <div
+                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25A2.25 2.25 0 0010.5 8.25V6A2.25 2.25 0 008.25 3.75H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5Z" />
                   </svg>
                 </div>
                 <div>
@@ -98,11 +136,14 @@
                   <p class="mt-1 text-gray-600">Scalable AI workloads with native cloud solutions</p>
                 </div>
               </a>
-              
+
               <a href="#" class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                  <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25A2.25 2.25 0 0010.5 8.25V6A2.25 2.25 0 008.25 3.75H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5Z" />
+                <div
+                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg class="w-6 h-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25A2.25 2.25 0 0010.5 8.25V6A2.25 2.25 0 008.25 3.75H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5Z" />
                   </svg>
                 </div>
                 <div>
@@ -110,44 +151,44 @@
                   <p class="mt-1 text-gray-600">ML/AI approaches for application containerization</p>
                 </div>
               </a>
-              
+
             </div>
           </div>
         </div>
       </div>
       <a href="#contact" class="font-semibold hover:text-white">Contact</a>
     </nav>
-    
+
   </div>
 </header>
 
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const dropdowns = document.querySelectorAll('.group');
-                    let timeoutId;
-                    let currentDropdown = null; // Track the currently open dropdown
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll('.group');
+    let timeoutId;
+    let currentDropdown = null; // Track the currently open dropdown
 
-                    dropdowns.forEach(dropdown => {
-                        const menu = dropdown.querySelector('.group-hover\\:flex');
+    dropdowns.forEach(dropdown => {
+      const menu = dropdown.querySelector('.group-hover\\:flex');
 
-                        dropdown.addEventListener('mouseenter', () => {
-                            // Close the previously open dropdown (if any)
-                            if (currentDropdown && currentDropdown !== menu) {
-                                currentDropdown.classList.add('hidden');
-                            }
-                            clearTimeout(timeoutId);  // Clear the timeout to prevent closing
-                            menu.classList.remove('hidden');  // Show the current dropdown
-                            currentDropdown = menu;  // Update the current open dropdown
-                        });
+      dropdown.addEventListener('mouseenter', () => {
+        // Close the previously open dropdown (if any)
+        if (currentDropdown && currentDropdown !== menu) {
+          currentDropdown.classList.add('hidden');
+        }
+        clearTimeout(timeoutId);  // Clear the timeout to prevent closing
+        menu.classList.remove('hidden');  // Show the current dropdown
+        currentDropdown = menu;  // Update the current open dropdown
+      });
 
-                        dropdown.addEventListener('mouseleave', () => {
-                            timeoutId = setTimeout(() => {
-                                menu.classList.add('hidden');  // Hide the dropdown after delay
-                                if (currentDropdown === menu) {
-                                    currentDropdown = null;  // Reset currentDropdown when it closes
-                                }
-                            }, 300);  // 300ms delay
-                        });
-                    });
-                });
-            </script>
+      dropdown.addEventListener('mouseleave', () => {
+        timeoutId = setTimeout(() => {
+          menu.classList.add('hidden');  // Hide the dropdown after delay
+          if (currentDropdown === menu) {
+            currentDropdown = null;  // Reset currentDropdown when it closes
+          }
+        }, 300);  // 300ms delay
+      });
+    });
+  });
+</script>
