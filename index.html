@@ -6,15 +6,17 @@ layout: none
 
   <body class="bg-midnight text-white font-sans min-h-screen flex flex-col">
 
-
   <!-- Hero Section -->
   <section class="py-24 bg-midnight">
     <div class="max-w-6xl mx-auto px-4 text-center">
-      <p class="mt-6 text-5xl text-white-300">
-        Accelerating Software Innovations for National Security
+      <h1 class="text-5xl font-bold text-white">
+        <span id="typing-text"></span><span class="blinking-cursor">|</span>Software Innovations
+      </h1>
+      <p class="mt-6 font-bold text-5xl text-white-300">
+        for National Security
       </p>
-      <p class="mt-6 text-2xl text-white-300">
-        <i>Secured. Scalable. Strategically Aligned.</i>
+      <p class="mt-6 font-bold text-2xl text-white-300">
+        <i>Adaptable. Secure. Scalable.</i>
       </p>
       <a
         href="/projects"
@@ -24,6 +26,45 @@ layout: none
       </a>
     </div>
   </section>
+
+    <script>
+      const words = ["Accelerating", "Integrating", "Deploying"];
+      const el = document.getElementById("typing-text");
+    
+      let wordIndex = 0;
+      let charIndex = 0;
+      let typing = true;
+    
+      function typeLoop() {
+        const currentWord = words[wordIndex];
+    
+        if (typing) {
+          el.textContent = currentWord.slice(0, charIndex + 1);
+          charIndex++;
+          if (charIndex === currentWord.length) {
+            typing = false;
+            setTimeout(typeLoop, 2400); // pause before deleting
+            return;
+          }
+        } else {
+          el.textContent = currentWord.slice(0, charIndex - 1);
+          charIndex--;
+          if (charIndex === 0) {
+            typing = true;
+            wordIndex = (wordIndex + 1) % words.length;
+          }
+        }
+    
+        setTimeout(typeLoop, typing ? 100 : 50);
+      }
+    
+      typeLoop();
+    </script>
+    
+  </section>
+
+
+
   </body>
 
   {% include footer.html %}

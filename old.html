@@ -8,7 +8,16 @@
   <script>
     tailwind.config = {
       theme: {
-        extend: {
+              extend: {
+                animation: {
+          'fade-in': 'fadeIn 1s ease-in-out'
+        },
+        keyframes: {
+          fadeIn: {
+            '0%': { opacity: 0 },
+            '100%': { opacity: 1 }
+          }
+        },
           colors: {
             midnight: '#0f172a', // Deep blue tone
             darkMidnight: '#020a1b'
@@ -184,18 +193,47 @@
   });
 </script>
 
+<style>
+  .blinking-cursor {
+    animation: blink 1s step-start infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+</style>
+<style>
+  #typing-text {
+    background: linear-gradient(90deg, #00f0ff, #ff00ff, #00f0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: shine 3s linear infinite;
+    font-weight: bold;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: -200% center;
+    }
+  }
+</style>
 <body class="bg-midnight text-white font-sans min-h-screen flex flex-col">
 
 
   <!-- Hero Section -->
   <section class="py-24 bg-midnight">
     <div class="max-w-6xl mx-auto px-4 text-center">
-      <p class="mt-6 text-5xl text-white-300">
-        Engineering software solutions for complex systems.
+      <h1 class="text-5xl font-bold text-white">
+        <span id="typing-text"></span><span class="blinking-cursor">|</span>Software Innovations
+      </h1>
+      <p class="mt-6 font-bold text-5xl text-white-300">
+        for National Security
       </p>
-      <p class="mt-6 text-2xl text-white-300">
-        <i>Secure. Scalable. Future-proof.</i>
-        
+      <p class="mt-6 font-bold text-2xl text-white-300">
+        <i>Adaptable. Secure. Scalable.</i>
       </p>
       <a
         href="/projects"
@@ -238,3 +276,37 @@
       </div>
     </section>
 </body>
+
+<script>
+  const words = ["Accelerating", "Integrating", "Deploying"];
+  const el = document.getElementById("typing-text");
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let typing = true;
+
+  function typeLoop() {
+    const currentWord = words[wordIndex];
+
+    if (typing) {
+      el.textContent = currentWord.slice(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === currentWord.length) {
+        typing = false;
+        setTimeout(typeLoop, 2400); // pause before deleting
+        return;
+      }
+    } else {
+      el.textContent = currentWord.slice(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) {
+        typing = true;
+        wordIndex = (wordIndex + 1) % words.length;
+      }
+    }
+
+    setTimeout(typeLoop, typing ? 100 : 50);
+  }
+
+  typeLoop();
+</script>
