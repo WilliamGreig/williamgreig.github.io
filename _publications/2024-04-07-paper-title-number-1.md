@@ -2,9 +2,9 @@
 title: "Governing Artificial Intelligence: An Analogical Approach to Cultivate Shared Knowledge and Generate Newfound Insight"
 collection: publications
 category: manuscripts
-permalink: /publication/2024-27-04-governing-artificial-intelligence
+permalink: /publication/2024-04-27-governing-artificial-intelligence
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2024-27-04
+date: 2024-04-27
 venue: 'Journal 1'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
