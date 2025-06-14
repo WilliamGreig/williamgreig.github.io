@@ -11,52 +11,61 @@ redirect_from:
 
 Education
 ======
-* Bachelor of Science in Computer Science, University of Virginia, 2024
+* **University of Virginia, School of Engineering and Applied Sciences**  
+  * Bachelor of Science in Computer Science with an Engineering Business Minor  
+  * 3.90 Cumulative GPA | 3.95 Major GPA on a 4.00 Scale  
+  * Graduated with Highest Distinction (Summa Cum Laude)  
+  * Charlottesville, VA — Aug 2020–May 2024
 
-Work experience
+Awards and Distinguishments
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Department of Defense Special Act Service Award**  
+  Awarded in 2025 for Exceptional Contributions to the DoD and IC  
+* **NGIC IT Recognition Award**  
+  Awarded in 2025 for Mission-Critical application development  
+* **Raven Society Honor**  
+  Awarded in 2024 to top 0.5% of UVA students  
+* **Department of Defense SMART Scholarship**  
+  Awarded in 2023 at a 15% award rate  
+* **John Howard Coleman Engineering Merit Scholarship**  
+  Awarded in 2022 for academic excellence  
+* **University of Virginia Engineering Dean’s List**  
+  Awarded in all semesters from Fall 2021 to Fall 2023  
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Professional Experience
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Vulcan Technologies LLC — Co-Founder and Chief Executive Officer**  
+  * Co-founded a software contracting company delivering open-source cloud infrastructure and data engineering solutions for national security and startups.  
+  * Researched, designed, and deployed proprietary LLM-driven system code analysis and refactoring tool to containerize legacy software, reducing cloud migration time by over 70%.  
+  * Charlottesville, VA — March 2025–Present
+
+* **National Ground Intelligence Center — IT Specialist**  
+  * Refactored and developed classified information systems for the U.S. Army, Department of Defense, and other intelligence agencies in AWS Cloud. 
+  * Responsible for consulting with clients, architecting cloud solutions, hardening system security, and leading software development efforts in an Agile environment.
+  * Charlottesville, VA — July 2024–Present
+
+* **Axcelis Technologies Inc. — Software Engineer**  
+  * Responsible for developing and integrating end-to-end software solutions to automate manually-intensive processes and data engineering tasks for international trade compliance.  
+  * Spearheaded 8 automation projects, saving an estimated 380+ hours of manual work per year.  
+  * Designed and implemented a system for Axcelis’ drawback program, decreasing processing time by 95% and recouping over $417,000 in additional drawback value.  
+  * Charlottesville, VA — March 2022–Present
+
+* **Google x McIntire — Software Developer**  
+  * Won first place at a Google-sponsored Hackathon against 30+ other participants.  
+  * Developed and presented an AI-powered wildfire prediction system to address issues outlined in Executive Order 29 for the Commonwealth of Virginia.  
+  * Washington, DC — April 2024
+
+* **UVA Computer Science Department — Lead Teaching Assistant**  
+  * Led weekly review sections, held office hours, and graded students’ exams for both Discrete Mathematics and Data Structures & Algorithms courses.  
+  * Guest-lectured on combinatorics and proof by induction for Discrete Mathematics.  
+  * Charlottesville, VA — Aug 2021–Aug 2023
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams

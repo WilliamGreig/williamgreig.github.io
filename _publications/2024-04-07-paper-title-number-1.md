@@ -5,7 +5,7 @@ category: thesis
 permalink: /publication/2024-04-27-governing-artificial-intelligence
 excerpt: 'Undergraduate Thesis for the School of Engineering and Applied Science at the University of Virginia'
 date: 2024-04-27
-venue: 'Libra 1'
+venue: 'University of Virginia Libra Scholarly Repository'
 paperurl: 'https://doi.org/10.18130/4zjy-my68'
 citation: 'Greig, W. (2024). &quot;Governing Artificial Intelligence: An Analogical Approach to Cultivate Shared Knowledge and Generate Newfound Insight.&quot; <i> University of Virginia Libra Repository.</i>'
 ---
