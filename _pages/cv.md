@@ -13,7 +13,7 @@ Education
 ======
 * **University of Virginia, School of Engineering and Applied Sciences**  
   * Bachelor of Science in Computer Science with an Engineering Business Minor  
-  * 3.90 Cumulative GPA | 3.95 Major GPA on a 4.00 Scale  
+  * 3.90 Cumulative GPA -- 3.95 Major GPA on a 4.00 Scale  
   * Graduated with Highest Distinction (Summa Cum Laude)  
   * Charlottesville, VA — Aug 2020–May 2024
 
@@ -31,6 +31,33 @@ Awards and Distinguishments
   Awarded in 2022 for academic excellence  
 * **University of Virginia Engineering Dean’s List**  
   Awarded in all semesters from Fall 2021 to Fall 2023  
+
+
+<div style="display: flex; justify-content: space-between;">
+  <strong>Department of Defense Special Act Service Award</strong>
+  <span>Awarded 2025</span>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <strong>NGIC IT Recognition Award</strong>
+  <span>Awarded 2025</span>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <strong>Raven Society Honor</strong>
+  <span>Awarded 2024</span>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <strong>Department of Defense SMART Scholarship</strong>
+  <span>Awarded 2023</span>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <strong>John Howard Coleman Engineering Merit Scholarship</strong>
+  <span>Awarded 2022</span>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <strong>University of Virginia Engineering Dean’s List</strong>
+  <span>Fall 2021 – Fall 2023</span>
+</div>
+
 
 Professional Experience
 ======
