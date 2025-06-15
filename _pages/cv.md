@@ -12,20 +12,24 @@ redirect_from:
 Education
 ======
 
+
 <ul>
   <li>
     <div style="display: flex; justify-content: space-between; width: 100%;">
       <strong>University of Virginia, School of Engineering and Applied Sciences</strong>
-      <span>Aug 2020–May 2024</span>
+      <span>Charlottesville, VA</span>
+    </div>
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+      <span>Bachelor of Science in Computer Science with an Engineering Business Minor</span>
+      <span>Aug 2020 – May 2024</span>
     </div>
     <ul>
-      <li>Bachelor of Science in Computer Science with an Engineering Business Minor</li>
-      <li>3.90 Cumulative GPA — 3.95 Major GPA on a 4.00 Scale</li>
+      <li>3.90 Cumulative GPA 3.95 Major GPA on a 4.00 Scale</li>
       <li>Graduated with Highest Distinction (Summa Cum Laude)</li>
-      <li>Charlottesville, VA</li>
     </ul>
   </li>
 </ul>
+
 
 Awards and Distinguishments
 ======
