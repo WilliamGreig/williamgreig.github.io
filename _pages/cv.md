@@ -37,31 +37,31 @@ Awards and Distinguishments
   <li>
     <div style="display: flex; justify-content: space-between; width: 100%;">
       <strong>Department of Defense Special Act Service Award</strong>
-      <span>Awarded in 2025 for Exceptional Contributions to the DoD and IC</span>
+      <span>Awarded in 2025</span>
     </div>
   </li>
   <li>
     <div style="display: flex; justify-content: space-between; width: 100%;">
       <strong>NGIC IT Recognition Award</strong>
-      <span>Awarded in 2025 for Mission-Critical application development</span>
+      <span>Awarded in 2025</span>
     </div>
   </li>
   <li>
     <div style="display: flex; justify-content: space-between; width: 100%;">
       <strong>Raven Society Honor</strong>
-      <span>Awarded in 2024 to top 0.5% of UVA students</span>
+      <span>Awarded in 2024</span>
     </div>
   </li>
   <li>
     <div style="display: flex; justify-content: space-between; width: 100%;">
       <strong>Department of Defense SMART Scholarship</strong>
-      <span>Awarded in 2023 at a 15% award rate</span>
+      <span>Awarded in 2023</span>
     </div>
   </li>
   <li>
     <div style="display: flex; justify-content: space-between; width: 100%;">
       <strong>John Howard Coleman Engineering Merit Scholarship</strong>
-      <span>Awarded in 2022 for academic excellence</span>
+      <span>Awarded in 2022</span>
     </div>
   </li>
   <li>
